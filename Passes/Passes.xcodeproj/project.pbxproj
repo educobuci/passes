@@ -8,8 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		0EBBF86FEF8EA19F9AB590EF /* Pods_Passes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66A955479AC8CEAB82C74ADA /* Pods_Passes.framework */; };
+		87156FFA1F1AFF3600EEC997 /* EventService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87156FF91F1AFF3600EEC997 /* EventService.swift */; };
+		87156FFC1F1B002800EEC997 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87156FFB1F1B002800EEC997 /* Event.swift */; };
+		872002D01F22BDB5008718B8 /* EventDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872002CF1F22BDB5008718B8 /* EventDetailsViewController.swift */; };
+		872002D21F22BDD4008718B8 /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872002D11F22BDD4008718B8 /* EventsViewController.swift */; };
 		873BDCBF1F19BF550005C130 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873BDCBE1F19BF550005C130 /* AppDelegate.swift */; };
-		873BDCC11F19BF550005C130 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873BDCC01F19BF550005C130 /* ViewController.swift */; };
 		873BDCC41F19BF550005C130 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873BDCC21F19BF550005C130 /* Main.storyboard */; };
 		873BDCC61F19BF550005C130 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 873BDCC51F19BF550005C130 /* Assets.xcassets */; };
 		873BDCC91F19BF550005C130 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873BDCC71F19BF550005C130 /* LaunchScreen.storyboard */; };
@@ -19,9 +22,12 @@
 		07132ED3EF5B364F803DFEFB /* Pods-Passes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Passes.release.xcconfig"; path = "Pods/Target Support Files/Pods-Passes/Pods-Passes.release.xcconfig"; sourceTree = "<group>"; };
 		52B84FE8ADB63EDBA6EFE8DF /* Pods-Passes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Passes.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Passes/Pods-Passes.debug.xcconfig"; sourceTree = "<group>"; };
 		66A955479AC8CEAB82C74ADA /* Pods_Passes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Passes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		87156FF91F1AFF3600EEC997 /* EventService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EventService.swift; path = Model/EventService.swift; sourceTree = "<group>"; };
+		87156FFB1F1B002800EEC997 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Event.swift; path = Model/Event.swift; sourceTree = "<group>"; };
+		872002CF1F22BDB5008718B8 /* EventDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EventDetailsViewController.swift; path = Controllers/EventDetailsViewController.swift; sourceTree = "<group>"; };
+		872002D11F22BDD4008718B8 /* EventsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EventsViewController.swift; path = Controllers/EventsViewController.swift; sourceTree = "<group>"; };
 		873BDCBB1F19BF550005C130 /* Passes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Passes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		873BDCBE1F19BF550005C130 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		873BDCC01F19BF550005C130 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		873BDCC31F19BF550005C130 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		873BDCC51F19BF550005C130 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		873BDCC81F19BF550005C130 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -48,6 +54,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		87156FF81F1AD2E300EEC997 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				87156FF91F1AFF3600EEC997 /* EventService.swift */,
+				87156FFB1F1B002800EEC997 /* Event.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		873BDCB21F19BF550005C130 = {
 			isa = PBXGroup;
 			children = (
@@ -71,8 +86,9 @@
 			children = (
 				873BDCD31F19C00F0005C130 /* Assets */,
 				873BDCD01F19BF7F0005C130 /* Controller */,
-				873BDCD21F19BFB30005C130 /* Misc */,
+				87156FF81F1AD2E300EEC997 /* Model */,
 				873BDCD11F19BF9B0005C130 /* View */,
+				873BDCD21F19BFB30005C130 /* Misc */,
 			);
 			path = Passes;
 			sourceTree = "<group>";
@@ -80,7 +96,8 @@
 		873BDCD01F19BF7F0005C130 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				873BDCC01F19BF550005C130 /* ViewController.swift */,
+				872002CF1F22BDB5008718B8 /* EventDetailsViewController.swift */,
+				872002D11F22BDD4008718B8 /* EventsViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -244,8 +261,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				873BDCC11F19BF550005C130 /* ViewController.swift in Sources */,
+				87156FFC1F1B002800EEC997 /* Event.swift in Sources */,
+				872002D01F22BDB5008718B8 /* EventDetailsViewController.swift in Sources */,
+				87156FFA1F1AFF3600EEC997 /* EventService.swift in Sources */,
 				873BDCBF1F19BF550005C130 /* AppDelegate.swift in Sources */,
+				872002D21F22BDD4008718B8 /* EventsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,6 +433,7 @@
 				873BDCCF1F19BF550005C130 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

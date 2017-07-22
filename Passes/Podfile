@@ -6,5 +6,5 @@ target 'Passes' do
   use_frameworks!
 
   # Pods for Passes
-
+  pod 'SDWebImage'
 end
