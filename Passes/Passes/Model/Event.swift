@@ -9,9 +9,10 @@
 import Foundation
 
 struct Event {
-    var start: Date
-    var end: Date
-    var company: String
-    var person: String
-    var location: String
+    let id: Int
+    let start: Date
+    let end: Date
+    let host: Person
+    let guest: Person
+    let address: Address
 }

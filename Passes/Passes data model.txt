@@ -1,0 +1,28 @@
+Person
+	Name
+	Phone
+	Mobile
+	Picture
+	* Company
+		Name
+		Phone
+		Picture
+		Addresses
+			Title
+			Street
+			City
+			State
+			ZIP
+		[] People
+
+Event
+	Title
+	Description
+	Host
+	Guest
+	Start time
+	End time
+	* Person
+	* Company
+	* Address
+	

@@ -15,7 +15,7 @@ class EventDetailsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.companyImage.image = UIImage(named: event!.company.lowercased())
+        self.companyImage.image = UIImage(named: event!.host.company.name.lowercased())
     }
     
     override func viewWillAppear(_ animated: Bool) {

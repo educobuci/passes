@@ -27,9 +27,9 @@ class EventsViewController: UITableViewController {
         let cell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: self.eventCellId) ??
             UITableViewCell(style: .subtitle, reuseIdentifier: self.eventCellId)
         if let event = events?[indexPath.item] {
-            cell.textLabel?.text = "\(event.person) @ \(event.company)"
+            cell.textLabel?.text = "\(event.host.name) @ \(event.host.company.name)"
             cell.detailTextLabel?.text = "2pm to 3pm"
-            cell.imageView?.image = UIImage(named: event.company.lowercased())
+            cell.imageView?.image = UIImage(named: event.host.company.name.lowercased())
             cell.accessoryType = .disclosureIndicator
         }
         return cell
@@ -49,7 +49,7 @@ class EventsViewController: UITableViewController {
                 let detailsViewController = segue.destination as! EventDetailsViewController
                 let event = sender as? Event
                 detailsViewController.event = event
-                detailsViewController.navigationItem.title = event?.person
+                detailsViewController.navigationItem.title = event?.host.name
                 break
             default:
                 break
